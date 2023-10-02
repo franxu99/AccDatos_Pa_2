@@ -94,7 +94,7 @@ namespace AccDatos_Pa_2
                 MessageBox.Show(ex.Message);
                 return resultado;
             }
+            }
         }
 
     }
-}
