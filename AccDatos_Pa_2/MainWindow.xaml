@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AccDatos_Pa_2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="500" Width="800">
+    <Grid Background="#FFFFDEC6">
+        <StackPanel Margin="0,0,570,10" VerticalAlignment="Center">
+            <TextBlock Height="27" Margin="6" Text="Titulo: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Descripción: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Año de creación: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Idioma: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Idioma Original" FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Duración Alquiler: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Tarifa Alquiler: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Duración Pelicula: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Coste Reemplazamiento: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Calificación Edad: " FontSize="20" />
+            <TextBlock Height="27" Margin="6" Text="Extras: " FontSize="20" />
+        </StackPanel>
+        <StackPanel Margin="235,0,150,10" Opacity="1" VerticalAlignment="Center">
+            <TextBox x:Name="tb_title" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" SelectionTextBrush="#FF000000" />
+            <TextBox x:Name="tb_description" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_release_year" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_language_id" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_original_lenguage_id" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_rental_duration" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_rental_rate" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_length" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_replacement_cost" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_rating" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+            <TextBox x:Name="tb_special_features" Width="350" Height="27" Margin="6" FontSize="20" Opacity="0.75" SelectionOpacity="0" />
+        </StackPanel>
+        <StackPanel Margin="682,0,0,0" VerticalAlignment="Center">
+            <Button Height="50" Width="100" Content="Alta" Click="Button_Click" Background="#FFFF8F8F" FontSize="18" Foreground="White"  />
+        </StackPanel>
     </Grid>
 </Window>
